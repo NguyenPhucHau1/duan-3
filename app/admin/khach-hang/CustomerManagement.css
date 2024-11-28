@@ -1,0 +1,337 @@
+.add-account-container{
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+.customer-management {
+  padding: 20px;
+}
+
+.customer-management h2 {
+  margin-bottom: 20px;
+}
+
+.add-button {
+  padding: 10px 20px;
+  background-color: #4d6950;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+
+.add-button:hover{
+  background-color: #218838;
+  transition: all 1s;
+}
+
+.customer-form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.customer-form input {
+  margin: 5px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.customer-form button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.customer-form button:hover {
+  background-color: #45a049;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th, table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: center;
+  background-color: white;
+}
+
+table th {
+  background-color: #4d6950;
+  color: white;
+  text-align: center;
+}
+
+
+
+
+/* CSS */
+.status-button {
+  background-color: #56b65f;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+/* .status-button:hover,
+.status-button:focus {
+  background-color: #005721;
+} */
+
+
+.role-button {
+  background-color: #c20000;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+/* .role-button:hover,
+.role-button:focus {
+  background-color: #850000;
+} */
+.action-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /* Khoảng cách giữa các nút */
+}
+
+.edit-button {
+  padding: 8px 16px;
+  background-color: #4d6950; /* Màu nền xanh rêu */
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px; /* Bo góc */
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.edit-button:hover {
+  background-color: #3d5940; /* Màu đậm hơn khi hover */
+}
+
+.delete-icon {
+  padding: 8px 16px;
+  background-color: white; /* Nền trắng */
+  color: #4d6950; /* Màu chữ xanh rêu */
+  border: 1px solid #4d6950; /* Viền xanh rêu */
+  border-radius: 5px; /* Bo góc */
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+
+.lable {
+  line-height: 22px;
+
+  color: #A649DA;
+  font-family: sans-serif;
+  letter-spacing: 1px;
+}
+
+.button1:hover {
+  background: #a549da62;
+}
+
+.button1:hover .svg-icon {
+  animation: lr 1s linear infinite;
+}
+
+@keyframes lr {
+  0% {
+    transform: translateX(0);
+  }
+
+  25% {
+    transform: translateX(-1px);
+  }
+
+  75% {
+    transform: translateX(1px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+
+.label {
+  line-height: 22px;
+  color: #A649DA;
+  font-family: sans-serif;
+  letter-spacing: 1px;
+}
+
+
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-register {
+  background-color: #ffffff;
+  padding: 2rem;
+  width: 500px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* text-align: center; */
+}
+.close-modal{
+  color: black;
+}
+.modal-register h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.modal-register form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-register label {
+  font-size: 0.875rem;
+  color: #555;
+  margin-bottom: 0.25rem;
+  text-align: left;
+}
+
+.modal-register input[type="text"]::placeholder,
+.modal-register input[type="email"]::placeholder,
+.modal-register input[type="password"]::placeholder,
+.modal-register input[type="date"]::placeholder,
+.modal-register select::placeholder {
+  color: #333; /* Màu chữ khi chưa có dữ liệu (placeholder) */
+}
+
+.modal-register input[type="text"],
+.modal-register input[type="email"],
+.modal-register input[type="password"],
+.modal-register input[type="date"],
+.modal-register select {
+  background-color: #ffffff; /* Màu nền */
+  color: #000; /* Màu chữ khi có dữ liệu (value) */
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.modal-register button[type="submit1"] {
+  background-color: #4d6950;
+  color: #ffffff;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.modal-register button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.modal-register .close-modal {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  cursor: pointer;
+}
+
+.modal-register .checkbox-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.modal-register .checkbox-container input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+
+.modal-register .checkbox-container label {
+  font-size: 0.875rem;
+  color: #555;
+}
+
+.modal-register .error {
+  color: red;
+  font-size: 0.75rem;
+  text-align: left;
+  margin-bottom: 0.5rem;
+}
+form{
+  color: black;
+}
+form input  {
+  color: black;
+}
+

@@ -1,0 +1,172 @@
+.addMovieButtonContainer {
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+.addMovieButton {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.addMovieButton:hover {
+  background-color: #218838;
+}
+
+.tablesContainer {
+  margin-top: 20px;
+}
+
+.tableSection {
+  margin-bottom: 30px;
+}
+
+.tableTitle {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.table {
+  width: 100%;
+  background: white;
+  border-radius: .5rem;
+  border-collapse: collapse;
+}
+
+.table th, .table td {
+  border: 1px solid #dddddd46;
+  padding: 15px 20px; /* Increased padding */
+  text-align: center;
+}
+
+.table th {
+  background-color: #4d6950;
+  color: white;
+  
+  padding: 15px 20px; /* Adjust padding for headers */
+}
+
+.movieImage {
+  width: 60px; /* Slightly larger */
+  height: auto;
+}
+
+.editButton {
+  padding: 8px 15px; /* Increased button padding */
+  background-color: #4d6950;
+  color: white;
+  font-weight: 500;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.editButton:hover {
+  background-color: #4d6950;
+}
+
+.deleteButton {
+  padding: 8px 15px; /* Increased button padding */
+  background-color: white;
+  color: black;
+
+  border: 1px solid black !important;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.deleteButton:hover {
+    background-color: #4d6950;
+    color: white;
+  }
+.formContainer {
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Center items vertically */
+  margin-bottom: 20px; /* Spacing below the form */
+  padding: 10px; /* Padding inside the container */
+  background-color: #f9f9f9; /* Light background for contrast */
+  border: 1px solid #ddd; /* Border around the form */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.inputField {
+  flex: 1; /* Take up remaining space */
+  padding: 10px; /* Padding inside the input */
+  border: 1px solid #ccc; /* Light border */
+  border-radius: 4px; /* Rounded corners */
+  font-size: 16px; /* Font size for better readability */
+  margin-right: 10px; /* Space between input and button */
+  transition: border-color 0.3s; /* Transition for border color */
+}
+
+.inputField:focus {
+  border-color: #007bff; /* Change border color on focus */
+  outline: none; /* Remove default outline */
+}
+
+.addButton {
+  background-color: #4d6950; /* Primary button color */
+  color: white; /* Text color */
+  padding: 10px 20px; /* Padding inside the button */
+  border: none; /* Remove border */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Change cursor on hover */
+  font-size: 16px; /* Font size for better readability */
+  transition: background-color 0.3s; /* Transition for background color */
+}
+
+.addButton:hover {
+  background-color: #4d6950; /* Darker shade on hover */
+}
+.formContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Tạo ba cột có kích thước bằng nhau */
+  gap: 1rem; /* Khoảng cách giữa các phần tử */
+}
+
+.inputField,
+.selectField,
+.toggleInput {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.toggleLabel {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; /* Khoảng cách giữa nhãn và toggle */
+}
+
+.addButton {
+  grid-column: span 3; /* Để nút bấm chiếm toàn bộ chiều rộng của form */
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #4d6950;
+  color: white;
+  cursor: pointer;
+}
+
+.addButton:hover {
+  background-color: #324534;
+}
+/* Thêm vào styles.css hoặc styles.module.css */
+.actionButton {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  margin: 0 4px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+ 

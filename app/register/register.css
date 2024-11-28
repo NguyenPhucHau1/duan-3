@@ -1,0 +1,133 @@
+.module_modal{
+  width: 100%;
+  height: 100vh;
+  background-color:rgba(5, 11, 23, 0.7);
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  z-index:9999;
+}
+.modal-overlay {
+  position: fixed;
+  top: 345px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7); /* Tăng độ mờ cho nền */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.modal-register {
+  background-color: #343a40; /* Màu nền tối */
+  color: white;
+  padding: 30px; /* Tăng padding cho không gian thoáng hơn */
+  border-radius: 15px; /* Đường viền mềm mại hơn */
+  width: 90%;
+  max-width: 480px; /* Giới hạn chiều rộng cho thiết bị nhỏ */
+  position: relative;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Thêm bóng cho modal */
+}
+.password-group {
+  justify-content: center;
+  display: flex; /* Dàn ngang các phần tử */
+  justify-content: space-between; /* Tạo khoảng cách đều giữa các phần tử */
+  gap: 10px; /* Khoảng cách giữa các trường */
+}
+
+label {
+  color: #ffffff;
+  font-size: 20px; /* Kích thước chữ cho label */
+}
+.modal-register h2 {
+  font-size: 28px; 
+  text-align: center; /* Căn giữa tiêu đề */
+}
+
+.modal-register button[type="submit"] {
+  background: linear-gradient(to right, #fea2a2, #fd4242 35%);
+  color: white;
+  border: none;
+  border-radius: 5px; /* Đường viền tròn hơn */
+  display: block;
+  margin: 20px auto 0 auto;
+  cursor: pointer;
+  width: 100%;
+  height: 45px; /* Chiều cao nút lớn hơn */
+  font-size: 18px; /* Kích thước chữ cho nút nhỏ hơn */
+  font-weight: bold;
+  transition: background 0.3s; /* Hiệu ứng chuyển màu khi hover */
+}
+
+.modal-register button[type="submit"]:hover {
+  background: linear-gradient(
+    to right,
+    #fd4242,
+    #fea2a2 35%
+  ); /* Đổi màu khi hover */
+}
+
+.close-modal {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 28px; /* Kích thước lớn hơn cho nút đóng */
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.modal-register form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-register form label {
+  font-size: 20px; /* Kích thước chữ cho label nhỏ hơn */
+}
+
+.modal-register form input,
+form select {
+  padding: 8px; /* Tăng padding cho input và select */
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #495057; /* Màu nền cho input */
+  color: white;
+  position: relative;
+}
+
+.modal-register input::placeholder,
+select {
+  color: #ced4da; /* Màu placeholder */
+}
+
+.modal-register input:focus,
+select:focus {
+  outline: none;
+  background-color: #6c757d; /* Màu nền khi focus */
+}
+/* Thông báo lỗi */
+.error {
+  color: #ff6b6b; 
+  font-size: 14px; 
+  position: absolute;
+  right: 20px;
+
+  
+}
+/* Responsive */
+@media (max-width: 768px) {
+  .modal-register {
+    padding: 20px; /* Padding nhỏ hơn trên thiết bị nhỏ */
+  }
+
+  .modal-register h2 {
+    font-size: 24px; /* Kích thước tiêu đề nhỏ hơn */
+  }
+}
